@@ -1,0 +1,153 @@
+/**{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    font-family: 'Montserrat', cursive;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 2fr 0.3fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "header-grid"
+      "main-grid"
+      "footer-grid";
+    height: 200vh;
+    background-color: #f9f9f9;
+}
+.header-grid { 
+    display: grid;
+    grid-template-columns: 0.4fr 1fr;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-rows: 1fr;
+    gap: 0px 30%;
+    grid-template-areas:
+    "logo menu-Pri";
+    grid-area: header-grid;
+    background-color: #fff;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 0.1px solid rgba(255,255,255,.5);
+}
+.logo{
+    grid-area: logo;
+    text-align: center;
+    
+}
+.logo a{
+    font-family: 'Concert One', cursive;
+    text-decoration: none;
+    color: #000;
+    font-size: 3em;
+    line-height: 80px;
+}
+.logo span{
+    color:#ff0000;
+}
+.menu-Pri{
+    grid-area: menu-Pri;
+}
+.lista-menu{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "QuemSomos" "Acessibilidade" "Contatos" "Novidades";
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+.lista-menu li{
+    box-sizing: border-box;
+    text-align: center;
+    padding: 0% 8%;
+}
+.header-grid .menu-Pri .lista-menu li a{
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+    line-height: 80px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.header-grid .menu-Pri .lista-menu li a:hover{
+    color:#ff0000;
+}
+.main-grid{
+    grid-area: "main-grid";
+}
+.footer-grid {
+    background-color: #ff0000;
+    display: grid;
+    grid-template-rows: 1fr 0.1fr;
+    grid-gap: 5% 0px;
+    padding: 1% 0px;
+    box-sizing: border-box;
+    grid-area: footer-grid;
+}
+.contatos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.contatos figure{
+    margin: 0px;
+    display: grid;
+    grid-template-rows: 1fr 0.1fr;
+}
+.contatos img{
+ width: 25%;
+ margin-left: auto;
+ margin-right: auto;
+}
+.contatos figcaption{
+    text-align:center;
+    font-family: 'Montserrat', cursive;
+    color: #fff;
+    font-weight: bold;
+}
+.copyright p{
+    margin: 0px;
+    text-align: center;
+    color:#fff;
+    font-weight: bold;
+}
+@media screen and (max-width:720px){
+    .header-grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        grid-template-areas: 
+            "logo"
+            "menu-Pri";
+        width: 100vw;
+    }
+    .grid-container{
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+}*/
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat', cursive;
+}
+body {
+    margin: 0px;
+}
+.header-grid {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
+  }
+.lista-menu{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "QuemSomos" "Acessibilidade" "Contatos" "Novidades";
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+  
