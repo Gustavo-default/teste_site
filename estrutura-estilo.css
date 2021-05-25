@@ -138,7 +138,7 @@ body {
 .header-grid {
     display: grid;
     align-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
   }
 .lista-menu{
     display:grid;
